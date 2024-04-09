@@ -6,22 +6,9 @@ import clsx from 'clsx';
 import { useAPI } from '../../hooks/useAPI';
 
 function MovieDetailsPage() {
-    // Back link
+    //TODO Back link
     const { movieId } = useParams();
     const [movie] = useAPI(fetchMovieDetails, movieId);
-    // useEffect(() => {
-    //     async function getData() {
-    //         try {
-    //             const dataDetails = await fetchMovieDetails(movieId);
-    //             console.log(dataDetails);
-    //             setMovie(dataDetails);
-    //         } catch (err) {
-    //             console.log(err);
-    //         }
-    //     }
-    //     getData();
-    // }, []);
-    // const { title, backdrop_path, overview, vote_average, genres, release_date, tagline } = movie;
     return (
         movie && (
             <div className={s.card}>
