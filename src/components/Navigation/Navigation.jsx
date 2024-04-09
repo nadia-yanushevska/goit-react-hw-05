@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
-import s from './Header.module.css';
+import s from './Navigation.module.css';
 
-function Header() {
+function Navigation() {
     return (
         <header className={s.header}>
             <nav className={s.nav}>
@@ -16,4 +16,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default Navigation;

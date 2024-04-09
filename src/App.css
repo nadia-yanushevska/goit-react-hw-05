@@ -12,3 +12,7 @@ a {
         color: rgb(100, 26, 26);
     }
 }
+
+.container {
+    padding: 20px 120px;
+}
