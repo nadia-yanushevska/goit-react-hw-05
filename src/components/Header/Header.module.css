@@ -1,0 +1,10 @@
+.nav {
+    display: flex;
+    gap: 24px;
+}
+.header {
+    padding: 20px 120px;
+    background-color: rgb(255, 194, 170);
+
+    font-size: 28px;
+}

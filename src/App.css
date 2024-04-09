@@ -1,0 +1,14 @@
+a {
+    color: maroon;
+    text-decoration: none;
+    font-variant: small-caps;
+    &:visited {
+        color: maroon;
+    }
+    &:hover {
+        color: rgb(199, 61, 61);
+    }
+    &.active {
+        color: rgb(100, 26, 26);
+    }
+}
