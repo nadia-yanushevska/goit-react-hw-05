@@ -16,3 +16,9 @@ a {
 .container {
     padding: 20px 120px;
 }
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+}

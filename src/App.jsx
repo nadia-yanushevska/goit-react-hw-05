@@ -17,7 +17,7 @@ const MovieCast = lazy(() => import('./components/MovieCast/MovieCast'));
 const MovieReviews = lazy(() => import('./components/MovieReviews/MovieReviews'));
 
 function App() {
-    const [dataDetails, setDataDetails] = useState('');
+    const [movieList, setMovieList] = useState('');
     useEffect(() => {
         async function getData() {
             try {
@@ -28,6 +28,7 @@ function App() {
                 // const dataReviews = await fetchMovieReviews(12);
                 // const dataCredits = await fetchMovieCredits(12);
                 // console.log(data.results);
+                // setMovieList(data.results);
                 // console.log(dataQ.results);
                 // console.log(dataDetails);
                 // console.log(getImageUrl(dataDetails.imdb_id));

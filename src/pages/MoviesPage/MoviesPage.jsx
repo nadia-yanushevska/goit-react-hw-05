@@ -5,7 +5,7 @@ function MoviesPage() {
     return (
         <div className={s.div}>
             <h2>Movies</h2>
-            <MovieList />
+            <MovieList movieList={[]} />
         </div>
     );
 }

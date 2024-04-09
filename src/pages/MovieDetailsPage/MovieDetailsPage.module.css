@@ -1,0 +1,50 @@
+.card {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.row {
+    width: 1024px;
+}
+
+.column {
+    width: 500px;
+}
+
+.list {
+    display: flex;
+    gap: 36px;
+    list-style-type: none;
+    font-size: 24px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+.title {
+    margin: 0;
+}
+.heading,
+.text {
+    margin: 0;
+    font-size: 18px;
+}
+.text {
+    margin-bottom: 8px;
+}
+
+.genre_list {
+    padding-left: 16px;
+}
+
+.tag {
+    &::before {
+        content: '‘';
+    }
+    &::after {
+        content: '’';
+    }
+}
