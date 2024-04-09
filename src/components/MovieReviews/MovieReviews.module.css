@@ -1,0 +1,39 @@
+.div {
+    width: 100%;
+}
+.list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.card {
+    max-width: 1024px;
+    padding: 24px;
+    background-color: linen;
+    border: 1px solid salmon;
+    border-radius: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.datetime {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12px;
+}
+
+.title,
+.time,
+.date {
+    color: rgb(58, 10, 10);
+}
+
+.text {
+    margin: 0;
+}

@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import s from './MovieList.module.css';
 
-function MovieList({ movieList }) {
+function MovieList({ movieList = [] }) {
     // const [movieCast, setMovieCast] = useState('');
     // useEffect(() => {
     //     async function getData() {

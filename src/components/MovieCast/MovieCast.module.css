@@ -1,0 +1,28 @@
+.list {
+    list-style-type: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.item {
+    background-color: linen;
+    border: 1px solid salmon;
+    border-radius: 10px;
+    overflow: hidden;
+
+    font-size: 20px;
+    color: rgb(58, 10, 10);
+}
+
+.content {
+    padding: 16px 24px;
+}
+
+.img {
+    display: block;
+    width: 300px;
+    height: 450px;
+    object-fit: cover;
+}

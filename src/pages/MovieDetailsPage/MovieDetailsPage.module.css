@@ -13,6 +13,10 @@
     width: 500px;
 }
 
+.small_column {
+    width: 240px;
+}
+
 .list {
     display: flex;
     gap: 36px;
@@ -21,8 +25,8 @@
 }
 .flex {
     display: flex;
-    flex-wrap: wrap;
-    gap: 60px;
+    justify-content: space-between;
+    gap: 24px;
 }
 .title {
     margin: 0;
