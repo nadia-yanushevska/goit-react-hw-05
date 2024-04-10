@@ -18,7 +18,7 @@ function MovieDetailsPage() {
     return (
         <>
             <Link to={location.state || '/movies'} className={s.back}>
-                <MdKeyboardBackspace size={40} />
+                <MdKeyboardBackspace size={32} />
             </Link>
 
             {loading && <Loader />}

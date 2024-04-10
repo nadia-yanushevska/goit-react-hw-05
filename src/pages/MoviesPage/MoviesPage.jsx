@@ -19,7 +19,7 @@ function MoviesPage() {
     return (
         <div className={s.div}>
             <div className={s.search}>
-                <input type="text" placeholder="Search movie" value={searchParams.get('query')} className={s.input} onChange={handleSearch} />
+                <input type="text" placeholder="Search movies" value={searchParams.get('query')} className={s.input} onChange={handleSearch} />
             </div>
             {loading && <Loader />}
             {error && <Error />}
