@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy } from 'react';
 
-import Layout from './components/Layout/Layout';
-
 import './App.css';
+
+import Layout from './components/Layout/Layout';
 
 const HomePage = lazy(() => import('./pages/HomePage/HomePage'));
 const MoviesPage = lazy(() => import('./pages/MoviesPage/MoviesPage'));
@@ -15,7 +15,6 @@ const MovieCast = lazy(() => import('./components/MovieCast/MovieCast'));
 const MovieReviews = lazy(() => import('./components/MovieReviews/MovieReviews'));
 
 function App() {
-    //TODO Import formatting!!
     //TODO remove comment and logs!!
     return (
         <>

@@ -1,16 +1,22 @@
-import { fetchMovieReviews } from '../../api/TMDB';
-import { getCommentDate, getCommentTime } from '../../assets/helpers';
-import { useAPI } from '../../hooks/useAPI';
-import s from './MovieReviews.module.css';
 import { useParams } from 'react-router-dom';
 import parse from 'html-react-parser';
 
+import { useAPI } from '../../hooks/useAPI';
+import { fetchMovieReviews } from '../../api/TMDB';
+import { getCommentDate, getCommentTime } from '../../assets/helpers';
+
+import Loader from '../Loader/Loader';
+import Error from '../Error/Error';
+
+import s from './MovieReviews.module.css';
+
 function MovieReviews() {
     const { movieId } = useParams();
-    const [reviews] = useAPI(fetchMovieReviews, movieId);
-    console.log(reviews);
+    const [reviews, , { loading, error }] = useAPI(fetchMovieReviews, movieId);
     return (
         <>
+            {loading && <Loader />}
+            {error && <Error />}
             {reviews?.total_results === 0 ? (
                 <div className={s.div}>
                     <p>We do not have any reviews for this movie yet.</p>

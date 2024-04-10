@@ -1,0 +1,11 @@
+.error {
+    width: 100%;
+    font-size: 28px;
+    color: salmon;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.text {
+    margin: 0;
+}

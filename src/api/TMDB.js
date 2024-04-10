@@ -19,25 +19,25 @@ async function getMovies(url) {
 
 export async function fetchMovies() {
     const url = 'https://api.themoviedb.org/3/trending/movie/day?language=en-US';
-    return getMovies(url);
+    return await getMovies(url);
 }
 
 export async function fetchMoviesByQuery(query) {
     const url = `https://api.themoviedb.org/3/search/movie?query=${query}&include_adult=false&language=en-US&page=1`;
-    return getMovies(url);
+    return await getMovies(url);
 }
 
 export async function fetchMovieDetails(movieId) {
     const url = `https://api.themoviedb.org/3/movie/${movieId}`;
-    return getMovies(url);
+    return await getMovies(url);
 }
 
 export async function fetchMovieCredits(movieId) {
     const url = `https://api.themoviedb.org/3/movie/${movieId}/credits`;
-    return getMovies(url);
+    return await getMovies(url);
 }
 
 export async function fetchMovieReviews(movieId) {
     const url = `https://api.themoviedb.org/3/movie/${movieId}/reviews`;
-    return getMovies(url);
+    return await getMovies(url);
 }

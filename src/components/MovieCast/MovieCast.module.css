@@ -26,3 +26,7 @@
     height: 450px;
     object-fit: cover;
 }
+
+.div {
+    width: 100%;
+}

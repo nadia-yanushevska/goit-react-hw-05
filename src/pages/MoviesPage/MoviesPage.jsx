@@ -1,4 +1,5 @@
 import MovieList from '../../components/MovieList/MovieList';
+
 import s from './MoviesPage.module.css';
 
 function MoviesPage() {
