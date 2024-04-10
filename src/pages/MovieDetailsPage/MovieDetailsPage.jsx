@@ -1,5 +1,6 @@
 import clsx from 'clsx';
-import { Outlet, Link, useParams } from 'react-router-dom';
+import { Outlet, Link, useParams, useLocation } from 'react-router-dom';
+import { MdKeyboardBackspace } from 'react-icons/md';
 
 import { useAPI } from '../../hooks/useAPI';
 import { fetchMovieDetails } from '../../api/TMDB';
@@ -11,11 +12,15 @@ import Error from '../../components/Error/Error';
 import s from './MovieDetailsPage.module.css';
 
 function MovieDetailsPage() {
-    //TODO Back link
+    const location = useLocation();
     const { movieId } = useParams();
     const [movie, , { loading, error }] = useAPI(fetchMovieDetails, movieId);
     return (
         <>
+            <Link to={location.state || '/movies'} className={s.back}>
+                <MdKeyboardBackspace size={40} />
+            </Link>
+
             {loading && <Loader />}
             {error && <Error />}
 
@@ -55,10 +60,14 @@ function MovieDetailsPage() {
 
                     <ul className={clsx(s.row, s.list)}>
                         <li>
-                            <Link to="cast">Cast</Link>
+                            <Link to="cast" state={location.state}>
+                                Cast
+                            </Link>
                         </li>
                         <li>
-                            <Link to="reviews">Reviews</Link>
+                            <Link to="reviews" state={location.state}>
+                                Reviews
+                            </Link>
                         </li>
                     </ul>
                     <Outlet />

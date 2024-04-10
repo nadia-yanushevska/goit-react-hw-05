@@ -52,3 +52,17 @@
         content: '’';
     }
 }
+
+.back {
+    padding: 8px 16px;
+    border: 1px solid maroon;
+    border-radius: 4px;
+    width: fit-content;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        border-color: rgb(199, 61, 61);
+    }
+}

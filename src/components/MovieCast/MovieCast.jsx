@@ -12,7 +12,6 @@ import s from './MovieCast.module.css';
 function MovieCast() {
     const { movieId } = useParams();
     const [movieCredits, , { loading, error }] = useAPI(fetchMovieCredits, movieId);
-    console.log(movieCredits);
     return (
         <>
             {loading && <Loader />}
