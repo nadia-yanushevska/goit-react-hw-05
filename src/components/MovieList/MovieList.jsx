@@ -4,7 +4,6 @@ import s from './MovieList.module.css';
 
 function MovieList({ movieList = [] }) {
     const location = useLocation();
-    console.log(location);
     return (
         <ul className={s.list}>
             {movieList.map(movie => {
